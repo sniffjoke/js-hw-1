@@ -34,13 +34,16 @@
 // console.log(originalArray)
 // console.log(newArray);
 
-const user = {
-    name: 'John',
-    age: 25,
-    city: 'New York'
-}
+// const user = {
+//     name: 'John',
+//     age: 25,
+//     city: 'New York'
+// }
+//
+// const {age, city, name} = user
+// console.log(name, age, city)
 
-const {age, city, name} = user
-console.log(name, age, city)
+const fruits = ['apple', 'banana', 'orange'];
 
-
+const [, secondFruit, thirdFruit] = fruits;
+console.log(secondFruit, thirdFruit);
