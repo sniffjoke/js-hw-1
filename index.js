@@ -12,16 +12,24 @@
 // console.log('b: ', b)
 // console.log('a: ', a)
 
-const user = {
-    name: 'John',
-    address: {
-        city: 'New York',
-        country: 'USA',
-    },
-};
+// const user = {
+//     name: 'John',
+//     address: {
+//         city: 'New York',
+//         country: 'USA',
+//     },
+// };
+//
+// const updatedUser = {...user, address: {...user.address, city: 'Toronto'}}
+//
+// console.log(updatedUser);
+// console.log(user);
 
-const updatedUser = {...user, address: {...user.address, city: 'Toronto'}}
+const addElementToArray = (arr, x) => {
+    return [...arr, x];
+}
 
-console.log(updatedUser);
-console.log(user);
-
+const originalArray = [1, 2, 3, 4, 5];
+const newArray = addElementToArray(originalArray, 6)
+console.log(originalArray)
+console.log(newArray);
