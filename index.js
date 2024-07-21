@@ -62,11 +62,21 @@
 // console.log(year)
 // console.log(model)
 
-const students = [
-    {name: 'Alex', grade: 'A'},
-    {name: 'Emma', grade: 'B'},
-    {name: 'Chris', grade: 'C'},
-]
+// const students = [
+//     {name: 'Alex', grade: 'A'},
+//     {name: 'Emma', grade: 'B'},
+//     {name: 'Chris', grade: 'C'},
+// ]
+//
+// const [{name: student1}, , {name: student3}] = students
+// console.log(student1, student3)
 
-const [{name: student1}, , {name: student3}] = students
-console.log(student1, student3)
+const person = {firstName: 'Max', lastName: 'Johnson'}
+const {firstName: Nina, lastName: Ivanov, age = 25} = person
+
+const firstName = 'first name: Nina'
+const lastName = 'last name: Ivanov'
+
+console.log(Nina)
+console.log(Ivanov)
+console.log(age)
