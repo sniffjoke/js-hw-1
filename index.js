@@ -25,11 +25,22 @@
 // console.log(updatedUser);
 // console.log(user);
 
-const addElementToArray = (arr, x) => {
-    return [...arr, x];
+// const addElementToArray = (arr, x) => {
+//     return [...arr, x];
+// }
+//
+// const originalArray = [1, 2, 3, 4, 5];
+// const newArray = addElementToArray(originalArray, 6)
+// console.log(originalArray)
+// console.log(newArray);
+
+const user = {
+    name: 'John',
+    age: 25,
+    city: 'New York'
 }
 
-const originalArray = [1, 2, 3, 4, 5];
-const newArray = addElementToArray(originalArray, 6)
-console.log(originalArray)
-console.log(newArray);
+const {age, city, name} = user
+console.log(name, age, city)
+
+
