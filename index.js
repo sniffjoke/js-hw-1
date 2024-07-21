@@ -43,7 +43,15 @@
 // const {age, city, name} = user
 // console.log(name, age, city)
 
-const fruits = ['apple', 'banana', 'orange'];
+// const fruits = ['apple', 'banana', 'orange'];
+//
+// const [, secondFruit, thirdFruit] = fruits;
+// console.log(secondFruit, thirdFruit);
 
-const [, secondFruit, thirdFruit] = fruits;
-console.log(secondFruit, thirdFruit);
+const person = {name: 'Alice', age: 30}
+
+function printPersonDetails({name, age}) {
+    console.log(`Name: ${name}, Age: ${age}`)
+}
+
+printPersonDetails(person)
