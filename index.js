@@ -48,10 +48,16 @@
 // const [, secondFruit, thirdFruit] = fruits;
 // console.log(secondFruit, thirdFruit);
 
-const person = {name: 'Alice', age: 30}
+// const person = {name: 'Alice', age: 30}
+//
+// function printPersonDetails({name, age}) {
+//     console.log(`Name: ${name}, Age: ${age}`)
+// }
+//
+// printPersonDetails(person)
 
-function printPersonDetails({name, age}) {
-    console.log(`Name: ${name}, Age: ${age}`)
-}
-
-printPersonDetails(person)
+const car = {brand: 'Toyota', model: 'Camry'}
+const {brand, model, year=1989} = car
+console.log(brand)
+console.log(year)
+console.log(model)
