@@ -56,8 +56,17 @@
 //
 // printPersonDetails(person)
 
-const car = {brand: 'Toyota', model: 'Camry'}
-const {brand, model, year=1989} = car
-console.log(brand)
-console.log(year)
-console.log(model)
+// const car = {brand: 'Toyota', model: 'Camry'}
+// const {brand, model, year=1989} = car
+// console.log(brand)
+// console.log(year)
+// console.log(model)
+
+const students = [
+    {name: 'Alex', grade: 'A'},
+    {name: 'Emma', grade: 'B'},
+    {name: 'Chris', grade: 'C'},
+]
+
+const [{name: student1}, , {name: student3}] = students
+console.log(student1, student3)
